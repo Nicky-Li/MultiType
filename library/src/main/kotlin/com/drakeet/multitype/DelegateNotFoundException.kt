@@ -16,9 +16,6 @@
 
 package com.drakeet.multitype
 
-/**
- * @author Drakeet Xu
- */
-internal class DelegateNotFoundException(clazz: Class<*>) : RuntimeException(
-  "Have you registered the ${clazz.name} type and its delegate or binder?"
-)
+/** @author Drakeet Xu */
+internal class DelegateNotFoundException(clazz: Class<*>) :
+    RuntimeException("Have you registered the ${clazz.name} type and its delegate or binder?")
